@@ -2,176 +2,146 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive NFT Landing Page</title>
 </head>
 
 <body>
-	<nav>
-		<div class="heading">Landing Page</div>
-		<span class="sideMenuButton"
-			onclick="openNavbar()">
-			☰
-		</span>
 
-		<div class="navbar">
-			<ul>
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Sign Up</a></li>
-			</ul>
-		</div>
-	</nav>
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="#" class="logo">Ayo Hassan</a>
+            <div class="nav-links">
+                <span class="item selected">Home</span>
+                <span id="scroll" class="item">Get Started</span>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <button class="nav-btn selected">CREATE</button>
+                <button class="nav-btn">SIGN IN</button>
+            </div>
 
-	<!-- Side navigation bar for 
-		responsive website -->
-	<div class="sideNavigationBar"
-		id="sideNavigationBar">
-		<a href="#" class="closeButton"
-			onclick="closeNavbar()">
-			
-		</a>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Sign Up</a>
-	</div>
+            <button class="toggler">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+        <!-- End of Navbar -->
 
-	<!-- Content -->
-	<div class="line" id="Home">
-		<div class="side1">
-			<h1>Tutorial Hub.</h1>
-			<button>
-				<a href=
-"https://www.geeksforgeeks.org/">
-					Explore More
-				</a>
-			</button>
-		</div>
-		<div class="side2">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png"
-				width="500">
-		</div>
-	</div>
+        <!-- Top Container -->
+        <div class="top-container">
+            <div class="info-box">
+                <p class="header">
+                    Discover, collect, and charity in extraordinary NFT marketplace
+                </p>
+                <p class="info-text">
+                    Explore the best collections from hand-picked digital artists out there and find your gem here
+                </p>
+                <div class="info-buttons">
+                    <button class="info-btn selected">Explore</button>
+                    <button class="info-btn nav-btn">Create</button>
+                </div>
+            </div>
+            <div class="nft-box">
+                <img src="nft.jpg" class="nft-pic">
+                <div class="nft-content">
+                    <div class="info">
+                        <img src="logo.png" class="info-img">
+                        <div>
+                            <p>
+                                Reza
+                            </p>
+                            <p>
+                                0.27 Eth
+                            </p>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="icon-box">
+                            <i class='bx bx-heart'></i>
+                            258
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top Container -->
 
-	<section class="about" id="My Projects">
-		<div class="content">
-			<div class="title">
-				<span>Courses</span>
-			</div>
-			<div class="boxes">
-				<div class="box">
-					<div class="topic">
-						<a href="" target="_blank">
-							DSA
-						</a>
-					</div>
-					<p>
-						The term DSA stands for Data 
-						Structures and Algorithms. As 
-						the name itself suggests, it 
-						is a combination of two 
-						separate yet interrelated 
-						topics.
-					</p>
-				</div>
-				<div class="box">
+        <!-- Get Stearted -->
+        <div class="get-started">
+            <p class="header">Getting Started</p>
+            <p class="info-text">Buy and Sell NFTs from the world's top artists</p>
+            <div class="items-box">
+                <div class="item-container">
+                    <div class="item">
+                        <i class='bx bx-check-shield'></i>
+                    </div>
+                    <p>All transactions are safe</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class='bx bx-wallet-alt'></i>
+                    </div>
+                    <p>Connect your wallet</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class='bx bx-money'></i>
+                    </div>
+                    <p>Always free of any charges</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class='bx bx-rocket'></i>
+                    </div>
+                    <p>Very fast transactions</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Get Started -->
 
-					<div class="topic">
-						<a href="" target="_blank">
-							HTML
-						</a>
-					</div>
-					<p>
-						HTML stands for HyperText 
-						Markup Language. It is used 
-						to design web pages using 
-						the markup language.
-					</p>
-				</div>
 
-				<div class="box">
-					<div class="topic">
-						<a href="" target="_blank">
-							Javascript
-						</a>
-					</div>
-					<p>
-						JavaScript (JS) is the most 
-						popular lightweight, interpreted 
-						compiled programming language.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-header">
+                If you want something to be truly and wholeheartedly yours, turn it into an NFT.
+            </div>
+            <div class="footer-links">
+                <div class="link">
+                    <h5>Marketplace</h5>
+                    <p>Home</p>
+                    <p>Get Started</p>
+                    <p>Discover</p>
+                    <p>Learn More</p>
+                </div>
+                <div class="link">
+                    <h5>Company</h5>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Team Info</p>
+                </div>
+                <div class="link">
+                    <h5>Contact</h5>
+                    <p>Github</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Facebook</p>
+                </div>
 
-	<section class="contact" id="contact">
-		<div class="content">
-			<div class="title"><span>Sign Up</span></div>
-			<div class="contactMenu">
-				<div class="input1">
-					<div class="label1">Your Name</div>
-					<div class="input2">
-						<input type="text"
-							placeholder="Enter your Name here">
-					</div>
-					<div class="label1">
-						<label>Your Email</label>
-					</div>
-					<div class="input2">
-						<input type="text"
-							placeholder="Enter your Email here">
-					</div>
-					<div class="label1">
-						<label>Your Password</label>
-					</div>
-					<div class="input2">
-						<input type="text"
-							placeholder="Enter your Password here">
-					</div>
-					<div class="button">
-						<button>Sign Up</button>
-					</div>
-				</div>
-				<div class="input3">
-					<div class="rightside1">
-						<div class="title1">
-							<span>
-								Contact Us
-							</span>
-						</div>
-						<div class="content1">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nostrum saepe modi doloribus repellendus illum velit! Ab dolores corporis mollitia laudantium non, a quibusdam reiciendis inventore quia nam officia debitis!
-						</div>
-						<div class="title1">
-							<span>More Information</span>
-						</div>
-						<div class="content1">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam iusto placeat dicta deserunt labore officia porro optio repellat nostrum, laborum error magni culpa illo pariatur quos distinctio nam quod!
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Footer section -->
-	<footer>
-		<div class="footer">
-			<span>
-				Created By
-				<a href=""
-					target="_blank">
-					Ayo Hassan
-				</a>
-			</span>
-		</div>
-	</footer>
-	<script src="index.js"></script>
+            </div>
+
+        </div>
+        <!-- End of Footer -->
+        <div class="copyright">
+            <p>Copyright 2024,Ayo Hassan .</p>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
